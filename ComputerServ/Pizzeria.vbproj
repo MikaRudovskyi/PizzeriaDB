@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E397FAA-B380-4175-B84D-F48DF8A1C863}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ComputerServ.My.MyApplication</StartupObject>
+    <RootNamespace>ComputerServ</RootNamespace>
+    <AssemblyName>ComputerServ</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ComputerServ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ComputerServ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD_PizzeriaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_PizzeriaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuReport.Designer.vb">
+      <DependentUpon>MenuReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuTable.Designer.vb">
+      <DependentUpon>MenuTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Orders\Orders.Designer.vb">
+      <DependentUpon>Orders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\Orders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders\OrdersReport.Designer.vb">
+      <DependentUpon>OrdersReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\OrdersReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders\OrdersTable.Designer.vb">
+      <DependentUpon>OrdersTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\OrdersTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Positions\Positions.Designer.vb">
+      <DependentUpon>Positions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Positions\Positions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Positions\PositionsReport.Designer.vb">
+      <DependentUpon>PositionsReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Positions\PositionsReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Positions\PositionsTable.Designer.vb">
+      <DependentUpon>PositionsTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Positions\PositionsTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\Stock.Designer.vb">
+      <DependentUpon>Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\StockReport.Designer.vb">
+      <DependentUpon>StockReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\StockTable.Designer.vb">
+      <DependentUpon>StockTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables.Designer.vb">
+      <DependentUpon>Tables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuPizzeria.Designer.vb">
+      <DependentUpon>MenuPizzeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuPizzeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workers\Workers.Designer.vb">
+      <DependentUpon>Workers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Workers\Workers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workers\WorkersReport.Designer.vb">
+      <DependentUpon>WorkersReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Workers\WorkersReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workers\WorkersTable.Designer.vb">
+      <DependentUpon>WorkersTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Workers\WorkersTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuReport.rdlc" />
+    <EmbeddedResource Include="Menu\MenuReport.resx">
+      <DependentUpon>MenuReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuTable.resx">
+      <DependentUpon>MenuTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders\Orders.resx">
+      <DependentUpon>Orders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders\OrdersReport.rdlc" />
+    <EmbeddedResource Include="Orders\OrdersReport.resx">
+      <DependentUpon>OrdersReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders\OrdersTable.resx">
+      <DependentUpon>OrdersTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Positions\Positions.resx">
+      <DependentUpon>Positions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Positions\PositionsReport.rdlc" />
+    <EmbeddedResource Include="Positions\PositionsReport.resx">
+      <DependentUpon>PositionsReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Positions\PositionsTable.resx">
+      <DependentUpon>PositionsTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\StockReport.rdlc" />
+    <EmbeddedResource Include="Stock\Stock.resx">
+      <DependentUpon>Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\StockReport.resx">
+      <DependentUpon>StockReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\StockTable.resx">
+      <DependentUpon>StockTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables.resx">
+      <DependentUpon>Tables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuPizzeria.resx">
+      <DependentUpon>MenuPizzeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workers\Workers.resx">
+      <DependentUpon>Workers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workers\WorkersReport.rdlc" />
+    <EmbeddedResource Include="Workers\WorkersReport.resx">
+      <DependentUpon>WorkersReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workers\WorkersTable.resx">
+      <DependentUpon>WorkersTable.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BD_PizzeriaDataSet.xsc">
+      <DependentUpon>BD_PizzeriaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_PizzeriaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_PizzeriaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_PizzeriaDataSet.xss">
+      <DependentUpon>BD_PizzeriaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
